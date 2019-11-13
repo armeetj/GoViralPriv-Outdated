@@ -22,7 +22,7 @@ def search_vids_keyword(search_keyword, starting_page_token):
         time.sleep(30);
     return full_response;
     
-f = open("tools/response.json","w+")
+f = open("dataset/response.json","w+")
 arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 i = 0
 while i < len(arr):

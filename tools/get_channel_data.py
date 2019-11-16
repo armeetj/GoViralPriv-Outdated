@@ -1,3 +1,8 @@
+'''
+author: Armeet Jatyani
+year: 2019
+purpose: fetches video search
+'''
 import os
 import json
 import requests

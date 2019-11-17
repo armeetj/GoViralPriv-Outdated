@@ -1,9 +1,14 @@
+'''
+author: Armeet Jatyani
+year: 2019
+purpose: fetches video search
+'''
 import os
 import json
 import requests
 import time
 
-API_TOKEN = 'AIzaSyCqWZpaWln53yBER6LFp1gqkgyRNJEzF8g'
+API_TOKEN = 'AIzaSyDfzZw-wSX8NfI2vamY38igjIkIMimv_eA'
 API_URL_BASE = 'https://www.googleapis.com/youtube/v3'
 
 def search_vids_keyword(search_keyword, starting_page_token):
@@ -19,7 +24,7 @@ def search_vids_keyword(search_keyword, starting_page_token):
             next_page_token = 'end' 
         print(next_page_token)
         full_response = full_response + json.dumps(loaded_response)
-        time.sleep(30);
+        #time.sleep(1);
     return full_response;
     
 f = open("dataset/response.json","w+")
